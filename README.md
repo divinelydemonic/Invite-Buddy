@@ -21,8 +21,6 @@ It is designed as a scalable foundation for a full event management system.
 
 # 🎥 Demo 
 
-## 🖥️ Snapshots
-
 <h2 align="center">📸 App Snapshots</h2>
 
 <p align="center">
