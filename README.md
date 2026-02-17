@@ -23,7 +23,13 @@ It is designed as a scalable foundation for a full event management system.
 
 ## 📌 Main App Demo
 
-<b>YouTube Link:</b> https://youtu.be/1QDIzo64lFg
+<h2 align="center">🎥 App Demo</h2>
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=1QDIzo64lFg">
+    <img src="https://img.youtube.com/vi/1QDIzo64lFg/0.jpg" width="700">
+  </a>
+</p>
 
 Shows:
 - Adding invitations
