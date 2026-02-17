@@ -113,11 +113,12 @@ fun InvitationDashboard(
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(16.dp),
-            horizontalAlignment = Alignment.CenterHorizontally
+                .padding(horizontal = 16.dp, vertical = 12.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(6.dp)
         ) {
 
-            Spacer(modifier = Modifier.height(8.dp))
+//            Spacer(modifier = Modifier.height(8.dp))
 
             /* =====================================================
                Event Name Input
@@ -173,7 +174,7 @@ fun InvitationDashboard(
                 }
             )
 
-            Spacer(modifier = Modifier.height(12.dp))
+//            Spacer(modifier = Modifier.height(12.dp))
 
             /* =====================================================
                Event Date Display
@@ -308,7 +309,7 @@ fun InvitationDashboard(
                 }
             }
 
-            Spacer(Modifier.height(8.dp))
+//            Spacer(Modifier.height(8.dp))
 
             /* =====================================================
                Countdown Section
@@ -319,7 +320,7 @@ fun InvitationDashboard(
                 EventCountdown(eventDate, isDark)
             }
 
-            Spacer(modifier = Modifier.height(20.dp))
+//            Spacer(modifier = Modifier.height(12.dp))
 
             /* =====================================================
                RSVP Statistics Card
@@ -342,12 +343,12 @@ fun InvitationDashboard(
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(
-                            vertical = 12.dp,
+                            vertical = 8.dp,
                             horizontal = 8.dp
                         ),
 
                     verticalArrangement =
-                        Arrangement.spacedBy(10.dp)
+                        Arrangement.spacedBy(8.dp)
                 ) {
 
                     // Primary breakdown row
@@ -423,9 +424,8 @@ fun StatItem(
        ------------------------------------------------------- */
 
     Column(
-        modifier = modifier
-            // Internal spacing to avoid crowding between stats
-            .padding(horizontal = 8.dp, vertical = 4.dp)
+        modifier = modifier     // Internal spacing to avoid crowding between stats
+            .padding(horizontal = 6.dp, vertical = 2.dp)
             .wrapContentSize(),
 
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -455,7 +455,7 @@ fun StatItem(
             )
         }
 
-        Spacer(modifier = Modifier.height(6.dp))
+        Spacer(modifier = Modifier.height(4.dp))
 
         /* -------- Label -------- */
 
