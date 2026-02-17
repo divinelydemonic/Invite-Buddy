@@ -687,6 +687,7 @@ fun EventCountdown(
 // depth    → pseudo-depth value used for size & motion variance
 // colorIndex → index into themeColors list
 // offset   → vertical offset to stagger particle start positions
+
 data class Particle(
     val xFactor: Float,
     val depth: Float,
