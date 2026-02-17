@@ -68,16 +68,19 @@ fun InvitationList(
                     Spacer(Modifier.height(8.dp))
 
                     // Derived stats computed from current list
-                    val total = invitations.size
+
+                    //total invitees (accepted + pending + rejected)
+                    val totalInvited = invitations.size
+
                     val accepted = invitations.count { it.status == "ACCEPTED" }
                     val pending = invitations.count { it.status == "PENDING" }
                     val rejected = invitations.count { it.status == "REJECTED" }
 
-                    // Sum of all extra guests
-                    val totalExtras = invitations.sumOf { it.extras }
+                    // Extras should only count for accepted guests
+                    val totalExtras = invitations
+                        .filter { it.status == "ACCEPTED" }
+                        .sumOf { it.extras }
 
-                    // Total headcount including extras
-                    val totalWithExtras = total + totalExtras
 
                     // Dashboard header section
                     InvitationDashboard(
@@ -86,7 +89,7 @@ fun InvitationList(
                         eventDate = eventDate,
                         onEventDateChange = { eventDate = it },
                         isDark = isDark,
-                        total = totalWithExtras,
+                        total = totalInvited,
                         accepted = accepted,
                         pending = pending,
                         rejected = rejected,

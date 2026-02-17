@@ -384,7 +384,7 @@ fun InvitationDashboard(
                         horizontalArrangement =
                             Arrangement.Center
                     ) {
-                        StatItem("👤", total.toString(), "Total")
+                        StatItem("👤", total.toString(), "Invited")
                     }
                 }
             }
@@ -652,7 +652,7 @@ fun EventCountdown(
 
                     Text(
                         "🎉 It's Event Day!",
-                        style = MaterialTheme.typography.titleMedium.copy(
+                        style = MaterialTheme.typography.titleLarge.copy(
                             fontWeight = FontWeight.Bold
                         ),
                         color = countdownColor,
